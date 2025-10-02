@@ -1,58 +1,38 @@
-# Visual Novel Inspired Portfolio
+# bensenwang.dev
 
-This is a **personal portfolio website** built with **Next.js** and **TailwindCSS**
+Minimal portfolio site — clean, fast, functional.
 
-## 🚀 Quick Start
+## Stack
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- **Next.js 15** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui** components
+- **Biome** for linting
 
-2. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
+## Structure
 
-3. **Open your browser to:**
-   ```
-   http://localhost:3000
-   ```
+- `/` — Hero page with quick links
+- `/projects` — Published projects with images and descriptions
+- `/upcoming` — Projects in planning
+- `/about` — Bio, skills, contact
 
-## 🌐 Website Sections
+## Running Locally
 
-### 1. **Projects**
-* Displays completed projects with click-through navigation
-* Each project includes title, description, technologies, and GitHub link
-* Save/Load system with 9 save slots
-* Previous/Next navigation between projects
+```bash
+pnpm install
+pnpm dev
+```
 
-### 2. **Upcoming Projects**
-* Grid layout showing in-progress and planned projects
-* Progress bars and status indicators
-* Technology stacks and estimated completion dates
+Open [http://localhost:3000](http://localhost:3000)
 
-### 3. **About Me**
-* Personal introduction and background
-* Technical skills organized by category
-* Professional experience timeline
-* Contact information and social links
+## Content
 
-### 4. **Save/Load System**
-* Save current project state to any slot
-* Load from saved slots with timestamps
-* Delete saved slots functionality
+All content is defined in `INFO.md` as the source of truth. Project images are in `public/assets/`.
 
+## Notes
 
-## ⚙️ Tech Stack
-
-* **Framework**: Next.js 14 with App Router
-* **Styling**: TailwindCSS with custom VN color scheme
-* **Animation**: Framer Motion for smooth transitions
-* **State/Storage**: LocalStorage for Save/Load system
-* **TypeScript**: Full type safety
-
-
-## 📄 License
-
-MIT License. Free to use and modify.
+- Dark mode by default
+- File-based routing, no client state
+- No modals, no save/load features
+- Uses shadcn components throughout
