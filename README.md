@@ -2,6 +2,7 @@
 
 Minimal portfolio site — clean, fast, functional.
 
+
 ## Stack
 
 - **Next.js 15** (App Router)
